@@ -1,0 +1,41 @@
+<head>
+  <!-- {% load static %}
+  <link href='{% static 'polls/howto.css' %}' rel="stylesheet" type="text/css" />
+  <script src="{% static 'polls/howto.js' %}"></script> -->
+</head>
+<body>
+<table>
+  <tr>
+    <td> <a class="button" href="/polls">Home. </a> </td>
+
+    <td><a class="button" href="/polls/action">Take Action. </a></td>
+
+    <td>
+      <div class="dropdown">
+        <button class="buttondrop">Know the Facts.</button>
+          <div class="dropdown-content">
+          <a href="/polls/quickfacts">Quick Facts</a>
+          <a href="/polls/howto">How to survive a Mass Shooting</a>
+           </div>
+        </div>
+    </td>
+
+       <td><a class='button' href="/polls/about">About Us.</a>
+      </td>
+      <td><a class='button' href="/polls/questions">Polls.</a></td>
+    </tr>
+
+    </table>
+<h1>{{ question.question_text }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'polls:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+{% endfor %}
+<input type="submit" value="Vote">
+</form>
+</body>

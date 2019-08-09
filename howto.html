@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load static %}
+		<link href='{% static 'polls/howto.css' %}' rel="stylesheet" type="text/css" />
+	 	<script src="{% static 'polls/howto.js' %}"></script>
+	  <title> How to survive a shooting </title>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	</head>
+  <body>
+		<table>
+			<tr>
+				<td> <a class="button" href="/polls">Home. </a> </td>
+
+				<td><a class="button" href="/polls/action">Take Action. </a></td>
+
+				<td>
+					<div class="dropdown">
+						<button class="buttondrop">Know the Facts.</button>
+							<div class="dropdown-content">
+							<a href="/polls/quickfacts">Quick Facts</a>
+							<a href="/polls/howto">How to survive a Mass Shooting</a>
+							 </div>
+						</div>
+				</td>
+
+					 <td><a class='button' href="/polls/about">About Us.</a>
+					</td>
+					<td><a class='button' href="/polls/questions">Polls.</a></td>
+				</tr>
+
+				</table>
+      <h1> How to Prepare</h1>
+     <div class="slide" id="slide1">
+
+
+
+    <p> Mass shootings are all too common in the United States. Use this guide in case you are stuck in a situation in which an active shooter is in your presence. </p><br>
+  <b> Tip: Always be aware of emergency exits around you </b>
+
+
+      </div>
+    <div class="slide" id="slide2">
+      <div class="title"><h2><b>RUN</b><br><br></h2>
+      <p>Away from the shooter. Try and run in a zigzagging pattern to reduce the chance of being shot if targeted at and try and blend into the crowd if there is one.<p></div>
+
+
+    </div>
+    <div class="slide" id="slide3">
+      <div class="title"> <h2><b> Don't think</b><br></h2>
+      <p> Remember, your life is in danger. Don't take time to gather your stuff or pause for a second to get your thoughts together. Get out of there!</p>
+    </div>
+
+        </div>
+    <div class="slide" id="slide4">
+       <div class="title"><h2><b> Try and save others</b><br></h2></div>
+      <p> While trying to escape, bring others along that do not know what to do or are not attempting to escape. You may save a life, and traveling to safety with a group is infinetely safer than going alone.</p>
+    </div>
+
+       <div class="slide" id="slide5">
+       <div class="title"><h2><b>If you can not run: hide</b><br></h2></div>
+      <p> Hide out of side, and preferably in a place that is lockable and able to barricade. Remain completely quiet until confirmed safe. </p>
+    </div>
+
+           <div class="slide" id="slide6">
+     <div class="title"> <h2> <b>Last resort: Attack</b><br></h2><div>
+      <p> If the shooter has burst into the room you are in, don't just stand there and wait to get shot. Do anything you can to hurt the shooter, like jumping on top of them, preferably when they are reloading. The more people that attack the shooter, the more of a chance you have of defeating them. This is only as a last resort though, if your life is in jeparody. </p>
+    </div>
+		<!-- <script>
+			window.onload = function () {
+			  var controller = new ScrollMagic.Controller();
+			  var slides = document.getElementsByClassName("slide");
+			  for(var i = 0; i < slides.length; i++) {
+			    new ScrollMagic.Scene({
+			      triggerElement: slides[i],
+			      triggerHook: "onLeave",
+			    })
+			    .setPin(slides[i])
+			    .addTo(controller);
+			  }
+			}
+		</script> -->
+  </body>
+  </html>

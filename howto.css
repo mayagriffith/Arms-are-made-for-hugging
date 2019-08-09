@@ -1,0 +1,132 @@
+body{ font-family: "bariol", Helvetica, Arial, sans-serif;
+background-color:rgb(250, 218, 207);
+}
+
+.button{text-decoration: none;
+font-weight: bold;
+color: black;
+padding: 15px;
+font-size: 15px;
+position: sticky;
+}
+
+table{width:100%;
+}
+
+td{
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+}
+
+.button:hover{color:rgba(255, 0, 76, 0.747);}
+
+.buttondrop {
+  font-weight: bold;
+  background-color: coral;
+  color: black;
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(255, 223, 211);
+}
+
+.buttondrop:hover{color:rgba(255, 0, 76, 0.747);}
+
+.buttondrop {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+color: orange;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.slide {
+  display: flex;
+  justify-content: center; /* horizonal center  may need to readd*/
+  align-items: center;  /* vertical center */
+  height: 100vh;  /* vh = 1% of the height of the viewport */
+  margin-top: 30px
+}
+p{justify-content: center;/* horizonal center  may need to readd*/
+align-items: center;  /* vertical center */
+text-align:center;
+}
+.slide b {  /* any <b> element inside of an element with class "slide" */
+  font-family: sans-serif;
+  font-size: 60px;
+  color: white;
+  text-align:center;
+}
+
+.slide img {  /* any <img> element inside of an element with class "slide" */
+  height: 50vh;
+  padding-left: 20px;
+}
+h2{vertical-align:top;}
+
+#slide1 {
+  background: rgb(250, 212, 143);
+  font-size: 30px;
+}
+
+#slide2 {
+  background: rgb(255, 161, 127);
+  font-size: 30px;
+
+}
+
+#slide3 {
+  background: orange;
+      font-size: 30px;
+
+}
+
+#slide4 {
+  background: coral;
+      font-size: 30px;
+
+}
+
+#slide5 {
+  background: orange;
+  font-size: 30px;
+}
+
+h1{text-align:center;
+font-size: 60px;
+background-color: rgb(255, 222, 212);
+}
+
+
+#slide6 {
+  background: rgb(255, 203, 184);
+      font-size: 30px;
+}
+
+.title{justify-content: center;/* horizonal center  may need to readd*/
+align-items: flex-start;  /* vertical center */
+text-align:center}

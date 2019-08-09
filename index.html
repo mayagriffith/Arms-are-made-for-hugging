@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Arms are for Hugging</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'polls/oldstyle.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
+	<script src="script.js">
+
+	</script>
+  <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+	{% load static %}
+	<link href='{% static 'polls/style.css' %}' rel="stylesheet" type="text/css" />
+	<script src="{% static 'polls/script.js' %}"></script>
+</head>
+
+<body>
+
+	<table>
+		<tr>
+			<td> <a class="button" href="/polls">Home. </a> </td>
+
+			<td><a class="button" href="/polls/action">Take Action. </a></td>
+
+			<td>
+				<div class="dropdown">
+					<button class="buttondrop">Know the Facts.</button>
+            <div class="dropdown-content">
+            <a href="/polls/quickfacts">Quick Facts</a>
+            <a href="/polls/howto">How to survive a Mass Shooting</a>
+             </div>
+          </div>
+      </td>
+
+         <td><a class='button' href="/polls/about">About Us.</a>
+        </td>
+				<td><a class='button' href="/polls/questions">Polls.</a></td>
+      </tr>
+
+      </table>
+
+
+      <button id="scrollToTopButton" onclick="scrollToTop(300,3);"><i class="fa fa-arrow-up"></i></button>
+      <div class="stripe">
+
+    <center><h1>Arms are for Hugging</h1></center>
+    </div>
+
+    <img class="protest" src= "http://i68.tinypic.com/246uscn.jpg">
+
+
+
+      <div class="slide" id="slide1">
+     <p> There are <b>101</b><br> guns for every <b>100</b> <br> people in the US</p>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Household_gun_ownership_vs_Homicide_rate_2000-2001.png">
+    </div>
+    <div class="slide" id="slide2">
+      <p>The United States had <b> 251 </b> mass shootings during the first <b> 216 </b> days of <b> 2019 </b><br>That is more shootings than days.
+
+    </div>
+    <div class="slide" id="slide3">
+      <p>Mass shootings have<b> tripled </b>in frequency in recent years</p>
+    </div>
+
+
+
+  </body>
+</html>
